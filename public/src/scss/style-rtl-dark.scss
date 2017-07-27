@@ -79,19 +79,19 @@ Project:	Hound
 /****************************/
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Poppins:500);
 @import "../../vendors/bower_components/bootstrap/dist/css/bootstrap.min.css";
-@import "font-awesome.min.css";	
-@import "themify-icons.css";	
-@import "animate.css";	
-@import "simple-line-icons.css";	
-@import "linea-icon.css";	
-@import "pe-icon-7-stroke.css";	
-@import "pe-icon-7-styles.css";	
-@import "material-design-iconic-font.min.css";	
-@import "filter.css";	
+@import "../../dist/css/font-awesome.min.css";
+@import "../../dist/css/themify-icons.css";
+@import "../../dist/css/animate.css";
+@import "../../dist/css/simple-line-icons.css";
+@import "../../dist/css/linea-icon.css";
+@import "../../dist/css/pe-icon-7-stroke.css";
+@import "../../dist/css/pe-icon-7-styles.css";
+@import "../../dist/css/material-design-iconic-font.min.css";
+@import "../../dist/css/filter.css";
 @import "../../vendors/bower_components/switchery/dist/switchery.min.css";	
 @import "../../vendors/bower_components/owl.carousel/dist/assets/owl.carousel.min.css";	
 @import "../../vendors/bower_components/owl.carousel/dist/assets/owl.theme.default.min.css";	
-@import "lightgallery.css";	
+@import "../../dist/css/lightgallery.css";
 @import "../../vendors/bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";	
 @import "../../vendors/bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css";	
 @import "mixins.scss";	
@@ -5533,7 +5533,7 @@ a.compose-mail {
 .irs-bar, 
 .irs-bar-edge,
 .irs-slider {
-	 background:url("../img/range/sprite-skin-modern.png");
+	 background:url("../../dist/img/range/sprite-skin-modern.png");
 }
 .irs-slider {
 	background-position: 0 -120px;
@@ -6669,7 +6669,7 @@ a.compose-mail {
 	.profile-cover-pic {
 		position:relative;
 		min-height:197px;
-		background-image:url("../img/gallery/mock6.jpg");
+		background-image:url("../../dist/img/gallery/mock6.jpg");
 		.profile-image-overlay {
 			position:absolute;
 			height:100%;
@@ -6991,7 +6991,7 @@ a.compose-mail {
 }
 button.fc-agendaDay-button.fc-state-default.fc-corner-right,
 button.fc-month-button.fc-state-default.fc-corner-left,
-button.fc-agendaWeek-button,
+button.fc-agendaWeek-button
  {
 	@extend .btn;
 	@extend .btn-success;
@@ -7154,7 +7154,7 @@ button.fc-agendaWeek-button,
 	}
 	.todo-item {
 		padding: 10px 15px;
-		@iclude transition(.2s ease);
+		@include transition(.2s ease);
 		cursor:pointer;
 		&:hover {
 			background:$xtra_lighter_white;
@@ -7502,7 +7502,7 @@ ul.inbox-nav li a:hover, ul.inbox-nav li.active a, ul.inbox-nav li a:focus {
 			margin-top: 0;
 		}
 		.checkbox {
-			min-height: auto !important;
+			min-height: 0 !important;
 			padding-bottom: 0 !important;
 			padding-top: 0 !important;
 		}
@@ -7700,7 +7700,7 @@ ul.inbox-nav li a:hover, ul.inbox-nav li.active a, ul.inbox-nav li a:focus {
 	line-height:112px;
 }
 .error-bg-img {
-	background:url("../img/errorbg.jpg");
+	background:url("../../dist/img/errorbg.jpg");
 	background-size:cover;
 }
 .error-comment {
@@ -8442,7 +8442,7 @@ ul.inbox-nav li a:hover, ul.inbox-nav li.active a, ul.inbox-nav li a:focus {
 			}
 			&.alert-dropdown {
 				width:100%;
-				min-width: auto;
+				min-width: 0;
 			} 
 		}
 		&.alert-drp {
@@ -8469,7 +8469,7 @@ ul.inbox-nav li a:hover, ul.inbox-nav li.active a, ul.inbox-nav li a:focus {
 		.dropdown-menu {
 			&.app-dropdown {
 				width:100%;
-				min-width: auto;
+				min-width: 0;
 			} 
 		}
 		&.app-drp {
