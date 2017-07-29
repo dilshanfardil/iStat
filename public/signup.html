@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<title>Hound I Fast build Admin dashboard for any platform</title>
-		<meta name="description" content="Hound is a Dashboard & Admin Site Responsive Template by hencework." />
-		<meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Hound Admin, Houndadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
-		<meta name="author" content="hencework"/>
-		
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
-		
-		<!-- vector map CSS -->
-		<link href="vendors/bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css" rel="stylesheet" type="text/css"/>
-		
-		
-		
-		<!-- Custom CSS -->
-		<link href="dist/css/style.css" rel="stylesheet" type="text/css">
-	</head>
-	<body>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>iStat</title>
+	<meta name="description" content="iStat is a Results Analysing system adn also a kind of student Management system" />
+	<meta name="keywords" content="Results Anylisis Student Management Attendance" />
+	<meta name="author" content="iStat"/>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="icon" href="favicon.png" type="image/x-icon">
+
+	<!-- vector map CSS -->
+	<link href="vendors/bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+	<!-- Custom CSS -->
+	<link href="dist/css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
 		<!--Preloader-->
 		<div class="preloader-it">
 			<div class="la-anim-1"></div>
@@ -28,11 +27,12 @@
 		<!--/Preloader-->
 		
 		<div class="wrapper pa-0">
+
 			<header class="sp-header">
 				<div class="sp-logo-wrap pull-left">
 					<a href="index.html">
 						<img class="brand-img mr-10" src="dist/img/logo.png" alt="brand"/>
-						<span class="brand-text">Hound</span>
+						<span class="brand-text">iStat</span>
 					</a>
 				</div>
 				<div class="form-group mb-0 pull-right">
@@ -45,45 +45,55 @@
 			<!-- Main Content -->
 			<div class="page-wrapper pa-0 ma-0 auth-page">
 				<div class="container-fluid">
+
 					<!-- Row -->
 					<div class="table-struct full-width full-height">
 						<div class="table-cell vertical-align-middle auth-form-wrap">
 							<div class="auth-form  ml-auto mr-auto no-float">
+
 								<div class="row">
 									<div class="col-sm-12 col-xs-12">
 										<div class="mb-30">
-											<h3 class="text-center txt-dark mb-10">Sign up to Hound</h3>
+											<h3 class="text-center txt-dark mb-10">Sign up to iStat</h3>
 											<h6 class="text-center nonecase-font txt-grey">Enter your details below</h6>
-										</div>	
+										</div>
+
 										<div class="form-wrap">
-											<form action="#">
+
+											<form action="#" role="form" data-toggle="validator">
+
 												<div class="form-group">
-													<label class="control-label mb-10" for="exampleInputName_1">Username</label>
-													<input type="email" class="form-control" required="" id="exampleInputName_1" placeholder="Username">
+													<label class="control-label mb-10" for="inputUserName">Username</label>
+													<input type="text" class="form-control" required="" id="inputUserName" placeholder="Username">
 												</div>
+
 												<div class="form-group">
-													<label class="control-label mb-10" for="exampleInputEmail_2">Email address</label>
-													<input type="email" class="form-control" required="" id="exampleInputEmail_2" placeholder="Enter email">
+													<label class="control-label mb-10" for="inputEmail">Email address</label>
+													<input type="email" class="form-control" required="" id="inputEmail" placeholder="Enter email">
 												</div>
+
+                                                <!--Validation part is done by Bootstrap
+                                                    role="form" data-toggle="validator" From the template
+                                                    http://getbootstrap.com/css/#forms
+
+                                                    data-match and data-match-error
+                                                -->
+
 												<div class="form-group">
-													<label class="pull-left control-label mb-10" for="exampleInputpwd_2">Password</label>
-													<input type="password" class="form-control" required="" id="exampleInputpwd_2" placeholder="Enter pwd">
+													<label class="pull-left control-label mb-10" for="inputpwd">Password</label>
+													<input type="password" class="form-control" data-minlength="5" required="" id="inputpwd" placeholder="Enter pwd">
+                                                    <div class="help-block">Minimum of 5 characters</div>
+
+													<label class="pull-left control-label mb-10" for="inputpwd_con">Confirm Password</label>
+													<input type="password" class="form-control" required="" id="inputpwd_con" placeholder="Confirm" data-match="#inputpwd" data-match-error="Whoops, these don't match">
 												</div>
-												<div class="form-group">
-													<label class="pull-left control-label mb-10" for="exampleInputpwd_3">Confirm Password</label>
-													<input type="password" class="form-control" required="" id="exampleInputpwd_3" placeholder="Enter pwd">
-												</div>
-												<div class="form-group">
-													<div class="checkbox checkbox-primary pr-10 pull-left">
-														<input id="checkbox_2" required="" type="checkbox">
-														<label for="checkbox_2"> I agree to all <span class="txt-primary">Terms</span></label>
-													</div>
-													<div class="clearfix"></div>
-												</div>
+
 												<div class="form-group text-center">
 													<button type="submit" class="btn btn-info btn-rounded">sign Up</button>
 												</div>
+
 											</form>
+
 										</div>
 									</div>	
 								</div>
@@ -107,7 +117,9 @@
 		<!-- Bootstrap Core JavaScript -->
 		<script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="vendors/bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
-		
+		<script src="vendors/bower_components/bootstrap-validator/dist/validator.js"></script>
+		<script src="vendors/bower_components/bootstrap-validator/dist/validator.min.js"></script>
+
 		<!-- Slimscroll JavaScript -->
 		<script src="dist/js/jquery.slimscroll.js"></script>
 		
