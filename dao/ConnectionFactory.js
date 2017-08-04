@@ -8,7 +8,8 @@ var connection = mysql.createConnection({
     host:'localhost',
     user:'root',
     password:'1234',
-    database:'iStat'
+    database:'iStat',
+    port : '3306'
 });
 
 connection.connect(function (err) {
