@@ -60,7 +60,7 @@
 
 										<div class="form-wrap">
 
-											<form action="http://localhost:8080/user/add" id="frmUser" data-toggle="validator"
+											<form id="frmUser" data-toggle="validator"
 												  enctype="application/x-www-form-urlencoded" method="post" accept-charset="utf-8">
 
 												<div class="form-group">
@@ -81,12 +81,14 @@
                                                 -->
 
 												<div class="form-group">
+
 													<label class="pull-left control-label mb-10" for="txtpwd">Password</label>
 													<input type="password" class="form-control" data-minlength="5" required="" name="txtpwd" id="txtpwd" placeholder="Enter pwd">
                                                     <div class="help-block">Minimum of 5 characters</div>
 
 													<label class="pull-left control-label mb-10" for="txtpwd_con">Confirm Password</label>
 													<input type="password" class="form-control" required="" id="txtpwd_con" placeholder="Confirm" data-match="#txtpwd" data-match-error="Whoops, these don't match">
+
 												</div>
 
 												<div class="form-group">
@@ -94,7 +96,7 @@
 												</div>
 
 												<div class="form-group text-center">
-													<button value="button" id="btnSubmit" class="btn btn-info btn-rounded">sign Up</button>
+													<button value="button" id="btnGo" class="btn btn-info btn-rounded">sign Up</button>
 												</div>
 
 											</form>
@@ -111,43 +113,7 @@
 			</div>
 			<!-- /Main Content -->
 
-			<!--Sucess Model id = signinSuccess -->
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-						<h5 class="modal-title" id="signinSuccess">Modal Heading</h5>
-					</div>
-					<div class="modal-body">
-						<h5 class="mb-15">Overflowing text to show scroll behavior</h5>
-						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-						<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-				<!-- /.modal-content -->
-			</div>
 
-			<!--Unsucess Model id =signinunSuccess -->
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-						<h5 class="modal-title" id="signinUnsuccess">Modal Heading</h5>
-					</div>
-					<div class="modal-body">
-						<h5 class="mb-15">Overflowing text to show scroll behavior</h5>
-						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-						<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-				<!-- /.modal-content -->
-			</div>
 		
 		</div>
 		<!-- /#wrapper -->
@@ -157,6 +123,7 @@
 		<!-- jQuery -->
 		<script src="dist/js/jquery-3.2.1.min.js"></script>
 		<script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="controller/userController.js"></script>
 
 		<!-- Bootstrap Core JavaScript -->
 		<script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

@@ -4,7 +4,9 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var session = require('express-sessions');
+
+// Require the sessions using the Express-Sesseions
+// var expressSession = require('express-sessions');
 
 
 var serviceFactory=require('./service/ServiceFactory');
@@ -21,20 +23,21 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-
 app.use(express.static(path.join(__dirname, 'public')));
+
+// app.use(expressSession({secret:'max',saveUnintialized:false, resave:false}));
 
 app.use(["/index.html/","/"],serviceFactory);
 app.listen(8080);
 
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  console.log("404seen eka")
-  var err = new Error('Not Found');
-    err.status = 404;
-    next(err);
-});
+// app.use(function(req, res, next) {
+//   console.log("404seen eka")
+//   var err = new Error('Not Found');
+//     err.status = 404;
+//     next(err);
+// });
 
 // error handler
 app.use(function(err, req, res, next) {

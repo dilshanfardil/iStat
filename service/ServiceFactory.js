@@ -19,7 +19,6 @@ routingHandler.use(bodyParser.urlencoded({extended:true}));
 routingHandler.all("/:service/:serviceType",function (req, res) {
     switch (req.params.service){
         case "user":
-
             switch (req.params.serviceType){
                 case "add":
                     var user = new UserDTO(
