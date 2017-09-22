@@ -506,5 +506,162 @@ $( document ).ready(function() {
 				}
 			}
 		});
-	}	
+	}
+
+
+    if( $('#chart_A6').length > 0 ){
+        var ctx6 = document.getElementById("chart_A6").getContext("2d");
+        var data6 = {
+            labels: [
+                "lab 1",
+                "lab 2",
+                "lab 3"
+            ],
+            datasets: [
+                {
+                    data: [300, 50, 100],
+                    backgroundColor: [
+                        "rgba(234,101,162,.8)",
+                        "rgba(233,30,99,.8)",
+                        "rgba(1,200,83,.8)"
+                    ],
+                    hoverBackgroundColor: [
+                        "rgba(234,101,162,.8)",
+                        "rgba(233,30,99,.8)",
+                        "rgba(1,200,83,.8)"
+                    ]
+                }]
+        };
+
+        var pieChart  = new Chart(ctx6,{
+            type: 'pie',
+            data: data6,
+            options: {
+                animation: {
+                    duration:	3000
+                },
+                responsive: true,
+                legend: {
+                    labels: {
+                        fontFamily: "Roboto",
+                        fontColor:"#878787"
+                    }
+                },
+                tooltip: {
+                    backgroundColor:'rgba(33,33,33,1)',
+                    cornerRadius:0,
+                    footerFontFamily:"'Roboto'"
+                },
+                elements: {
+                    arc: {
+                        borderWidth: 0
+                    }
+                }
+            }
+        });
+    }
+    if( $('#chart_B6').length > 0 ){
+        var ctx6 = document.getElementById("chart_B6").getContext("2d");
+        var data6 = {
+            labels: [
+                "lab 1",
+                "lab 2",
+                "lab 3"
+            ],
+            datasets: [
+                {
+                    data: [300, 50, 100],
+                    backgroundColor: [
+                        "rgba(234,101,162,.8)",
+                        "rgba(233,30,99,.8)",
+                        "rgba(1,200,83,.8)"
+                    ],
+                    hoverBackgroundColor: [
+                        "rgba(234,101,162,.8)",
+                        "rgba(233,30,99,.8)",
+                        "rgba(1,200,83,.8)"
+                    ]
+                }]
+        };
+
+        var pieChart  = new Chart(ctx6,{
+            type: 'pie',
+            data: data6,
+            options: {
+                animation: {
+                    duration:	3000
+                },
+                responsive: true,
+                legend: {
+                    labels: {
+                        fontFamily: "Roboto",
+                        fontColor:"#878787"
+                    }
+                },
+                tooltip: {
+                    backgroundColor:'rgba(33,33,33,1)',
+                    cornerRadius:0,
+                    footerFontFamily:"'Roboto'"
+                },
+                elements: {
+                    arc: {
+                        borderWidth: 0
+                    }
+                }
+            }
+        });
+    }
+    if( $('#chart_C6').length > 0 ){
+        var ctx6 = document.getElementById("chart_C6").getContext("2d");
+        var data6 = {
+            labels: [
+                "lab 1",
+                "lab 2",
+                "lab 3"
+            ],
+            datasets: [
+                {
+                    data: [300, 50, 100],
+                    backgroundColor: [
+                        "rgba(234,101,162,.8)",
+                        "rgba(233,30,99,.8)",
+                        "rgba(1,200,83,.8)"
+                    ],
+                    hoverBackgroundColor: [
+                        "rgba(234,101,162,.8)",
+                        "rgba(233,30,99,.8)",
+                        "rgba(1,200,83,.8)"
+                    ]
+                }]
+        };
+
+        var pieChart  = new Chart(ctx6,{
+            type: 'pie',
+            data: data6,
+            options: {
+                animation: {
+                    duration:	3000
+                },
+                responsive: true,
+                legend: {
+                    labels: {
+                        fontFamily: "Roboto",
+                        fontColor:"#878787"
+                    }
+                },
+                tooltip: {
+                    backgroundColor:'rgba(33,33,33,1)',
+                    cornerRadius:0,
+                    footerFontFamily:"'Roboto'"
+                },
+                elements: {
+                    arc: {
+                        borderWidth: 0
+                    }
+                }
+            }
+        });
+    }
+
+
 });
